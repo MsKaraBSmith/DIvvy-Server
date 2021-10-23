@@ -6,7 +6,7 @@ const db = require("./db");
 //This is kara branch
 
 // Import middlewares as a bundle
-// const middlewares = require("./middleware");
+const middlewares = require("./middleware");
 
 // Import controllers as a bundle
 const controllers = require("./controllers");
