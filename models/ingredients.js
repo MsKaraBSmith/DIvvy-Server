@@ -3,7 +3,7 @@ const db = require("../db");
 
 const Ingredients = db.define("ingredients", {
     ingredients: {
-        type: DataTypes.JSON,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     date: {

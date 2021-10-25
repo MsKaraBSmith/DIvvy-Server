@@ -12,7 +12,7 @@ const Menu = db.define("menu", {
         allowNull: false,
     },
     ingredientList: {
-        type: DataTypes.INTEGER,
+        type: DataTypes.STRING,
         allowNull: false,
     },
     recipeLink: {

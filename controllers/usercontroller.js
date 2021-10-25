@@ -9,7 +9,7 @@ const router = Router();
 
 router.get('/practice', function(req, res) {
   res.send("Practice route")
-})
+});
 
 //Signup
 router.post('/register', async function (req, res) {

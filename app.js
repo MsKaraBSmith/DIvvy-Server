@@ -15,6 +15,9 @@ const controllers = require("./controllers");
 app.use(Express.json());
 // app.use(middleware.CORS)
 app.use("/user", controllers.User);
+app.use("/menu", controllers.Menu);
+app.use("/ingredients", controllers.Ingredients);
+app.use("/shopping", controllers.Shopping);
 
 const resetDatabase = {force:true}
 db.authenticate()
