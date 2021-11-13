@@ -5,14 +5,14 @@ const User = db.define("user", {
   groupName: {
     type: DataTypes.STRING,
     allowNull: false,
-    unique: true,
+    unique: false,
   },
   familyUsername: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
   },
-  email: {
+  username: {
     type: DataTypes.STRING(100),
     allowNull: false,
     unique: true,
@@ -21,6 +21,10 @@ const User = db.define("user", {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  role: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  }
 });
 
 module.exports = User;

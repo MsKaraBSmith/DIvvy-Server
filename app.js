@@ -3,17 +3,22 @@ const Express = require("express");
 const app = Express();
 const db = require("./db");
 
+//This is kara branch
 
 // Import middlewares as a bundle
-// const middlewares = require("./middleware");
+const middlewares = require("./middleware");
 
 // Import controllers as a bundle
 const controllers = require("./controllers");
 
 // Parse the body of all requests as JSON
+
 app.use(Express.json());
-// app.use(middleware.CORS)
+app.use(middlewares.CORS);
 app.use("/user", controllers.User);
+app.use("/menu", controllers.Menu);
+app.use("/ingredients", controllers.Ingredients);
+app.use("/shopping", controllers.Shopping);
 
 const resetDatabase = {force:true}
 db.authenticate()
