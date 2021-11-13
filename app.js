@@ -12,8 +12,9 @@ const middlewares = require("./middleware");
 const controllers = require("./controllers");
 
 // Parse the body of all requests as JSON
+
 app.use(Express.json());
-// app.use(middleware.CORS)
+app.use(middlewares.CORS);
 app.use("/user", controllers.User);
 app.use("/menu", controllers.Menu);
 app.use("/ingredients", controllers.Ingredients);
