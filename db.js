@@ -15,6 +15,6 @@ dialectOptions: {
     rejectUnauthorized: false,
   }
 }
-})
+});
 
 module.exports = db;
