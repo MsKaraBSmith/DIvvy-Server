@@ -9,12 +9,12 @@ const db = new Sequelize(
   `postgresql://postgres:${encodeURIComponent(process.env.PASS)}@localhost/divvy`, 
 {
 dialect: 'postgres',
-dialectOptions: {
-  ssl: {
-    require: true,
-    rejectUnauthorized: false,
-  }
-}
+// dialectOptions: {
+//   ssl: {
+//     require: true,
+//     rejectUnauthorized: false,
+//   }
+// }
 });
 
 module.exports = db;
