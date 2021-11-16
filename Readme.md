@@ -1,4 +1,4 @@
-# Client for Divvy, a menu planning app
+# Server for Divvy, a menu planning app
 
 Divvy is an app that is intended to be used by busy adults to share in meal planning responsibilities. You can only make one menu per date so there aren't duplicate days. You can also put together a shopping list for the menu you created, so the user knows exactly what they need to make the meal for that specific date.
 
